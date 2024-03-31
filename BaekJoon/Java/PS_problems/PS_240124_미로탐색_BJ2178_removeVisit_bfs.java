@@ -1,3 +1,5 @@
+package PS_problems;
+
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +8,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main {
+public class PS_240124_미로탐색_BJ2178_removeVisit_bfs {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();
 

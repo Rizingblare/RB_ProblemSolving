@@ -1,7 +1,9 @@
+package PS_problems;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class PS_240201_연결요소의개수_BJ11724_dfs_recursive {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();

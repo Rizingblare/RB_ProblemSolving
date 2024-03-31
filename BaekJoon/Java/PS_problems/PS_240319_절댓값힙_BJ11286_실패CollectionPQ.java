@@ -1,4 +1,4 @@
-package PS_2024_03_3주차;
+package PS_problems;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class PS_BJ11286_CollectionPQ_240319 {
+public class PS_240319_절댓값힙_BJ11286_실패CollectionPQ {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();
 

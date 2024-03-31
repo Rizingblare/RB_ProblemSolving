@@ -1,3 +1,5 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Main {
+public class PS_240120_후위표기식_BJ1918_답지참고구현 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class PS_240203_NQueen_BJ9663 {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();

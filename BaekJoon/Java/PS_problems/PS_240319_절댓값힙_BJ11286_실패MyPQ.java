@@ -1,8 +1,10 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PS_BJ11286_MyPQ_240319 {
+public class PS_240319_절댓값힙_BJ11286_실패MyPQ {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();
     private static final int MAX_SIZE = 100000;

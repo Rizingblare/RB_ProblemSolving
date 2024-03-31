@@ -1,6 +1,8 @@
+package PS_problems;
+
 import java.util.Scanner;
 
-public class Main {
+public class PS_240202_N과M3_BJ15651 {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();
@@ -9,7 +11,7 @@ public class Main {
     private static int m;
     private static int[] arr;
 
-    private static void backtrack(int at, int depth) {
+    private static void backtrack(int depth) {
         if (depth == m) {
             for (int i : arr) {
                 sb.append(i).append(" ");
@@ -18,9 +20,9 @@ public class Main {
             return;
         }
 
-        for (int i = at; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             arr[depth] = i;
-            backtrack(i+1, depth+1);
+            backtrack(depth+1);
         }
     }
 
@@ -30,7 +32,7 @@ public class Main {
         m = sc.nextInt();
         arr = new int[m];
 
-        backtrack(1,0);
+        backtrack(0);
         System.out.println(sb);
     }
 }

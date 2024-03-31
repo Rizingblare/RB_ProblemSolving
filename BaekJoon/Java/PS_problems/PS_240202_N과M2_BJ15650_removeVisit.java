@@ -1,6 +1,8 @@
+package PS_problems;
+
 import java.util.Scanner;
 
-public class Main {
+public class PS_240202_N과M2_BJ15650_removeVisit {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();
@@ -8,10 +10,9 @@ public class Main {
     private static int n;
     private static int m;
     private static int[] arr;
-    private static boolean[] isused;
 
-    private static void backtrack(int k) {
-        if (k == m) {
+    private static void backtrack(int at, int depth) {
+        if (depth == m) {
             for (int i : arr) {
                 sb.append(i).append(" ");
             }
@@ -19,15 +20,9 @@ public class Main {
             return;
         }
 
-        int iter = k > 0 ? arr[k-1] : 1;
-
-        for (int i = iter; i <= n; i++) {
-            if (!isused[i]) {
-                arr[k] = i;
-                isused[i] = true;
-                backtrack(k+1);
-                isused[i] = false;
-            }
+        for (int i = at; i <= n; i++) {
+            arr[depth] = i;
+            backtrack(i+1, depth+1);
         }
     }
 
@@ -36,9 +31,8 @@ public class Main {
         n = sc.nextInt();
         m = sc.nextInt();
         arr = new int[m];
-        isused = new boolean[n+1];
 
-        backtrack(0);
+        backtrack(1,0);
         System.out.println(sb);
     }
 }

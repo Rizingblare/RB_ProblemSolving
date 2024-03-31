@@ -1,7 +1,9 @@
+package PS_problems;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class PS_240201_연결요소의개수_BJ11724_dfs_logicalVisit {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();
@@ -22,30 +24,30 @@ public class Main {
             graph[v].add(u);
         }
 
-        System.out.println(solve(N,M,graph));
+        System.out.println(solve(N, graph));
 
     }
 
-    private static int solve(int n, int m, ArrayList<Integer>[] graph) {
+    private static int solve(int n, ArrayList<Integer>[] graph) {
 
         boolean[] vis = new boolean[n+1];
-        Queue<Integer> queue = new LinkedList<>();
+        Stack<Integer> dfsStack = new Stack<>();
 
         int cnt = 0;
         for (int i = 1; i <= n; i++) {
             if (vis[i]) continue;
             cnt++;
-            queue.add(i);
+            dfsStack.add(i);
 
-            while (!queue.isEmpty()) {
-                int curr = queue.peek();
-                queue.poll();
+            while (!dfsStack.isEmpty()) {
+                int curr = dfsStack.peek();
+                dfsStack.pop();
                 if (vis[curr]) continue;
                 vis[curr] = true;
 
                 for (int j : graph[curr]) {
                     if (vis[j]) continue;
-                    queue.add(j);
+                    dfsStack.add(j);
                 }
             }
         }

@@ -1,9 +1,11 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Main {
+public class PS_240107_괄호_BJ9012 {
     private static final Scanner scanner = new Scanner(System.in);
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuffer sb = new StringBuffer();

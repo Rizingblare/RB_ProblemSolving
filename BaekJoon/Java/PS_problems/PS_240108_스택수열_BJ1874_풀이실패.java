@@ -1,9 +1,11 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Main {
+public class PS_240108_스택수열_BJ1874_풀이실패 {
     private static final Scanner scanner = new Scanner(System.in);
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuffer sb = new StringBuffer();
@@ -11,39 +13,26 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         int n = Integer.parseInt(br.readLine());
-        MyStack numbers = new MyStack(n);
-        numbers.fill(n);
-
         MyStack stack = new MyStack(n);
-
-        boolean isStack = true;
 
         for (int i = 0; i < n; i++) {
             int a = Integer.parseInt(br.readLine());
 
             if (stack.top() > a) {
-                isStack = false;
+                System.out.println("NO");
+                break;
             }
 
             if (stack.top() < a) {
                 while (stack.top() < a) {
-                    sb.append("+").append("\n");
-                    stack.push(numbers.pop());
+                    stack.push(stack.size()+1);
                 }
             }
 
             if (stack.top() == a) {
-                sb.append("-").append("\n");
                 stack.pop();
             }
-        }
 
-        if (isStack) {
-            System.out.println(sb);
-        }
-
-        else {
-            System.out.println("NO");
         }
     }
 
@@ -52,28 +41,19 @@ public class Main {
         private final int[] stack;
         private int len;
 
-
         public MyStack(int n) {
             this.stack = new int[n];
             this.len = 0;
         }
 
-
-        public void fill(int n) {
-            if (len == 0) {
-                for (int i = n; i > 0; i--) {
-                    stack[len++] = i;
-                }
-            }
-        }
-
         public void push(int newItem) {
             stack[len++] = newItem;
+            System.out.println("+");
         }
 
-        public int pop() {
+        public void pop() {
             if (len != 0) len--;
-            return stack[len];
+            System.out.println("-");
         }
 
         public int size() {

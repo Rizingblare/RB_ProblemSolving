@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class PS_240201_DFS와BFS_BJ1260_Graph {
     private static final Scanner sc = new Scanner(System.in);
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();

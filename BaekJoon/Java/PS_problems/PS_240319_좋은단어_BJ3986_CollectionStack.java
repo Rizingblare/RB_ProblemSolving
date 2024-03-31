@@ -1,9 +1,11 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class PS_BJ3986_CollectionStack_240319 {
+public class PS_240319_좋은단어_BJ3986_CollectionStack {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {

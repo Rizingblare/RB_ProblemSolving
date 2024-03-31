@@ -1,6 +1,8 @@
+package PS_problems;
+
 import java.util.Scanner;
 
-public class Main {
+public class PS_240203_123더하기_BJ9095 {
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();
 

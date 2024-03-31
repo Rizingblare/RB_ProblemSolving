@@ -1,6 +1,8 @@
+package PS_problems;
+
 import java.util.Scanner;
 
-public class Main {
+public class PS_240202_N과M1_BJ15649_backtrack {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final StringBuilder sb = new StringBuilder();

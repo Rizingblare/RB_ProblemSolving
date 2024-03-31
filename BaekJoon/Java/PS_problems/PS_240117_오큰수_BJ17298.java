@@ -1,3 +1,5 @@
+package PS_problems;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Stack;
 
-public class Main {
+public class PS_240117_오큰수_BJ17298 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static final StringBuilder sb = new StringBuilder();
 

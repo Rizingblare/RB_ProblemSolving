@@ -1,6 +1,8 @@
+package PS_problems;
+
 import java.util.Scanner;
 
-public class Main {
+public class PS_240203_1로만들기_BJ1463 {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
