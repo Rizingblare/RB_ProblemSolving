@@ -3,7 +3,7 @@ package PS_problems;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class PS_240104_스택_BJ10828_풀이3_표준라이브러리활용 {
+public class PS_240104_스택_BOJ10828_풀이3_표준라이브러리활용 {
     private static final Scanner scanner = new Scanner(System.in);
     private static final StringBuffer sb = new StringBuffer();
 
