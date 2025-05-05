@@ -1,4 +1,4 @@
-package PS_problems;
+package problems;
 
 import java.awt.*;
 import java.io.BufferedReader;

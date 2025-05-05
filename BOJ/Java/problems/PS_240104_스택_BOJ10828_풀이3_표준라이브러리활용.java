@@ -1,4 +1,4 @@
-package PS_problems;
+package problems;
 
 import java.util.Scanner;
 import java.util.Stack;
